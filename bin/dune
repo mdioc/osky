@@ -1,0 +1,4 @@
+(executable
+ (public_name osky)
+ (name main)
+ (libraries osky piaf core core_unix eio_main))
