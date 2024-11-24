@@ -2,13 +2,12 @@ open Core
 open Osky.Post
 open Osky.Get
 open Osky.Json
-
-let load_config () = In_channel.read_all "config.json" |> String.rstrip
+open Osky.Config
 
 let () =
   Eio_main.run (fun env ->
     Eio.Switch.run (fun sw ->
-      let config = load_config () in
+      let config = Config.load_config () in
       let auth_post =
         Post.create_request
           config
