@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github mdioc/osky))
 
-(authors "Author Name")
+(authors "mdioc")
 
-(maintainers "Maintainer Name")
+(maintainers "mdioc")
 
 (license LICENSE)
 
@@ -17,10 +17,10 @@
 
 (package
  (name osky)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
+ (synopsis "OCaml cli for bluesky")
+ (description "OCaml cli for bluesky to learn OCaml")
+ (depends ocaml dune eio eio_main piaf core core_unix yojson)
  (tags
-  (topics "to describe" your project)))
+  (topics "learning" your project)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
