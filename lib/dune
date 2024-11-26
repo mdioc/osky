@@ -1,3 +1,3 @@
 (library
  (name osky)
- (libraries yojson core core_unix piaf))
+ (libraries yojson core core_unix piaf eio))
